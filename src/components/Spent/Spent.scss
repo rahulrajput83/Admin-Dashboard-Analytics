@@ -1,0 +1,53 @@
+.Spent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: fit-content;
+
+    span {
+        font-weight: 700;
+        color: #060232;
+        font-size: 1.1rem;
+    }
+
+    .SpentChart {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: space-between;
+        height: 8rem;
+
+        .Item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: fit-content;
+            height: 100%;
+            gap: 0.7rem;
+            .Chart {
+                margin: auto;
+                display: flex;
+                justify-content: flex-end;
+                width: fit-content;
+                align-items: flex-end;
+                height: 100%;
+                span {
+                    width: 0.5rem;
+                    height: 100%;
+                    background: #060232;
+                    border-top-left-radius: 1rem;
+                    border-top-right-radius: 1rem;
+                    margin: 0;
+                }
+            }
+
+            span {
+                color: rgb(133, 132, 132);
+                font-size: 0.8rem;
+                font-weight: 600;
+                margin: auto;
+            }
+        }
+
+
+    }
+}

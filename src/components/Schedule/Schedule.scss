@@ -1,0 +1,83 @@
+.Schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .ScheRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: rgb(133, 132, 132);
+            cursor: pointer;
+
+            &:first-child {
+                font-weight: 700;
+                color: #060232;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .SchData {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .SchItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.2rem;
+
+            .Itemtime {
+                padding: 0.65rem;
+                font-size: 0.85rem;
+                color: #060232;
+                font-weight: 900;
+                border-radius: 50%;
+                border: 0.12rem solid #b7b7b8;
+            }
+
+            .ItemCol {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 0.4rem;
+
+                span {
+                    font-size: 0.9rem;
+                    color: #060232;
+                    font-weight: 800;
+
+                    &:last-child {
+                        color: rgb(133, 132, 132);
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .time {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.3rem;
+
+                .icon {
+                    font-size: 0.8rem;
+                    color: #060232;
+                }
+
+                span {
+                    color: #060232;
+                    font-size: 0.8rem;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

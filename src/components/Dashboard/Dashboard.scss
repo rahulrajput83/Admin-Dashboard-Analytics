@@ -1,0 +1,83 @@
+.Dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+    box-sizing: border-box;
+    .Dashtop {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .leftDash {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 0;
+            span {
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: rgb(133, 132, 132);
+                &:first-child {
+                    font-weight: 700;
+                    color: #060232;
+                    font-size: 2rem;
+                }
+            }
+        }
+        .rightDash {
+            display: flex;
+            gap: 1rem;
+            flex-direction: row;
+            width: fit-content;
+            padding-top: 0.6rem;
+            .iconLine {
+                height: 30%;
+                width: 0.12rem;
+                background: #f0eff2;
+            }
+            .icon {
+                cursor: pointer;
+            }
+        }
+    }
+    .Dashbottom {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        width: 100%;
+        @media (min-width: 600px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .BottLeft, .BottRight {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-sizing: border-box;
+            .rev {
+                display: flex;
+                flex-direction: column;
+                span {
+                    font-size: 0.8rem;
+                    color: rgb(133, 132, 132);
+                    font-weight: 600;
+                    &:last-child {
+                        font-size: 1.2rem;
+                        color: #060232;
+                        font-weight: 900;
+                    }
+                }
+            }
+            .icon {
+                padding: 12px;
+                border-radius: 0.5rem;
+                background: #f0eff2;
+                color: #060232;
+            }
+        }
+    }
+}

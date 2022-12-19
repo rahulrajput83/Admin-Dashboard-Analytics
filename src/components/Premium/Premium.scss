@@ -1,0 +1,67 @@
+.Premium {
+    background: linear-gradient(130deg, #645883, #88679b, );
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    height: 10rem;
+    width: 100%;
+
+    @media (min-width: 800px) {
+        height: 10rem;
+    }
+
+    .circle {
+        position: absolute;
+        top: -6rem;
+        right: -6rem;
+        border-radius: 50%;
+        background: #efb34a;
+        width: 20rem;
+        height: 20rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        align-items: flex-end;
+        padding: 2rem;
+         img {
+            width: fit-content;
+            height: 80%;
+            position: absolute;
+            top: 35%;
+            right: 30%;
+            object-fit: cover;
+         }
+    }
+
+    span {
+        width: 50%;
+        color: #efb34a;
+        font-size: 0.85rem;
+
+        &:first-child {
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+    .icon {
+        color: white;
+        position: absolute;
+        top: 35%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        background: rgba(254, 254, 254, 0.3);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

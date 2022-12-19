@@ -1,0 +1,24 @@
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    .LogoImg {
+        width: 0.55rem;
+        height: 1.2rem;   
+    }
+    span {
+        margin-left: 0.5rem;
+        font-weight: 700;
+        color: #0C0831;
+    }
+
+    .right {
+        background: #F2B54D;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .left {
+        background: #0a033c;
+        border-bottom-left-radius: 2rem;
+    }
+}
